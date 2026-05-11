@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --clr-navbar-bg: #ffffff;
+  --clr-navbar-border: #f5f5f5;
+  --clr-navbar-text: #B4A17A;
+  --clr-navbar-link: #404040;
+  --clr-navbar-link-active-bg: #B4A17A;
+  --clr-navbar-link-active-text: #ffffff;
+  --clr-announcement-bg: #FBF9F5;
+  --clr-announcement-text: #1f1f1f;
+  --clr-announcement-border: #B4A17A;
+  --clr-hero-bg-from: #FBF9F5;
+  --clr-hero-bg-to: #ffffff;
+  --clr-hero-title: #111111;
+  --clr-hero-tagline: #B4A17A;
+  --clr-hero-body: #525252;
+  --clr-hero-btn-primary-bg: #B4A17A;
+  --clr-hero-btn-primary-text: #ffffff;
+  --clr-hero-btn-secondary-bg: #ffffff;
+  --clr-hero-btn-secondary-text: #111111;
+  --clr-hero-btn-secondary-border: #e5e5e5;
+  --clr-category-card-bg: #ffffff;
+  --clr-category-card-border: #f5f5f5;
+  --clr-category-card-title: #B4A17A;
+  --clr-category-card-count: #737373;
+  --clr-section-bg: #ffffff;
+  --clr-section-title: #111111;
+  --clr-section-subtitle: #737373;
+  --clr-product-card-bg: #ffffff;
+  --clr-product-card-border: #f5f5f5;
+  --clr-product-card-title: #111111;
+  --clr-product-card-meta: #737373;
+  --clr-product-card-img-bg: #FBF9F5;
+  --clr-product-badge-new-bg: #B4A17A;
+  --clr-product-badge-new-text: #ffffff;
+  --clr-whatsapp-btn-bg: #B4A17A;
+  --clr-whatsapp-btn-text: #ffffff;
+  --clr-wishlist-btn-bg: #ffffff;
+  --clr-wishlist-btn-border: #e5e5e5;
+  --clr-wishlist-btn-text: #111111;
+  --clr-footer-bg: #f9f9f9;
+  --clr-footer-text: #525252;
+  --clr-footer-heading: #111111;
+  --clr-footer-link: #525252;
+  --clr-footer-icon: #B4A17A;
+  --clr-footer-border: #f5f5f5;
+  --clr-page-bg: #ffffff;
+  --clr-input-border: #e5e5e5;
+  --clr-input-bg: #ffffff;
+  --clr-input-focus: #B4A17A;
+  --clr-admin-sidebar-bg: #ffffff;
+  --clr-admin-sidebar-border: #f5f5f5;
+  --clr-admin-sidebar-text: #404040;
+  --clr-admin-sidebar-active-bg: #B4A17A;
+  --clr-admin-sidebar-active-text: #ffffff;
+  --clr-floating-wa-bg: #22c55e;
+  --clr-floating-wa-text: #ffffff;
+  --font-body: 'Inter', sans-serif;
+  --font-display: 'Cormorant Garamond', serif;
+  --font-nav: 'Inter', sans-serif;
+  --font-hero-title: 'Cormorant Garamond', serif;
+  --font-hero-body: 'Inter', sans-serif;
+  --font-category-card: 'Cormorant Garamond', serif;
+  --font-product-card-title: 'Cormorant Garamond', serif;
+  --font-product-card-body: 'Inter', sans-serif;
+  --font-section-title: 'Cormorant Garamond', serif;
+  --font-footer: 'Inter', sans-serif;
+  --font-announcement: 'Inter', sans-serif;
+  --font-lang-hi: 'Hind', sans-serif;
+  --font-lang-mr: 'Hind', sans-serif;
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--clr-page-bg);
+  color: #111111;
+  min-height: 100%;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.5s ease-out both;
+}
+
+.gold-divider {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #C9A84C, transparent);
+  margin: 2rem auto;
+  width: 60%;
+}
+
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  display: inline-block;
+  animation: marquee 24s linear infinite;
+}
